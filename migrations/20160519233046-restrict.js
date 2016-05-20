@@ -16,8 +16,7 @@ exports.setup = function(options, seedLink) {
 
 exports.up = function(db, callback) {
   db.addColumn('task', 'restrict', {
-        type: 'string',
-        defaultValue: null,
+        type: 'string'
       }, callback);
 };
 
