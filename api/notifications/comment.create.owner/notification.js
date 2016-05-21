@@ -18,9 +18,7 @@ module.exports = {
       model: {},
       owner: {},
     };
-    console.log('comment.create.owner model:', model);
     User.findOne( { id: model.userId } ).exec( function ( err, commenter ) {
-      console.log('commenter:', commenter);
 
       if ( err ) { return done( err ); }
 

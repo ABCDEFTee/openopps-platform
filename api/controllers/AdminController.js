@@ -456,7 +456,6 @@ module.exports = {
   * eg: /api/admin/tasks
   */
   tasks: function ( req, res ) {
-    sails.log.verbose('AdminController tasks', req.allParams())
     var page = parseInt( req.param( 'page', 1 ) ),
       limit = req.param( 'limit', 1000 ),
       sort = req.param( 'sort', 'createdAt desc' ),
@@ -477,7 +476,6 @@ module.exports = {
     }
 
     findTasks.then(function(output) {
-      console.log('output ---->', output)
       res.json( output );
     })
     .catch(function(err) {
