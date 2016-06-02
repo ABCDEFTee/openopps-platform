@@ -1,8 +1,8 @@
 ---
-name: Open Opportunities (Midas)
+name: Open Opportunities (openopps-platform)
 uniqueID: OCSIT-20140904-20150721-03
-version: 0.7.4
-phase: beta
+version: 0.10.4
+phase: live
 information-types:
 - D26 Civilian Operations
 confidentiality: none
@@ -14,11 +14,11 @@ level-of-identity-assurance: 0
 staff:
     authorizing-official:
         name: Aaron Snow
-        title: 18F Executive Director 
+        title: 18F Executive Director
         org: General Services Administration
         unit: 18F
         email: 18F@gsa.gov
-    system-owner: 
+    system-owner:
         name: Noah Kunin
         title: 18F Infrastructure Director
         org: General Services Administration
@@ -37,16 +37,17 @@ staff:
         unit: 18F
         email: devops@gsa.gov
     technical-lead:
-        name: Sarah Allen
+        name: Roger Steve Ruiz
         title: Engineer
         org: General Services Administration
         unit: 18F
-        email: sarah.allen@gsa.gov
-leveraged-authorizations: 
+        email: roger.ruiz@gsa.gov
+leveraged-authorizations:
 - https://www.fedramp.gov/marketplace/compliant-systems/amazon-web-services-aws-eastwest-us-public-cloud/
-purpose: https://github.com/18F/openFEC/blob/develop/README.md
-components: 
-- https://github.com/18F/midas/blob/devel/package.json
+purpose: https://github.com/openopps/openopps-platform/blob/dev/README.md
+components:
+- https://github.com/openopps/openopps-platform/blob/dev/package.json
+# diagram: is out-of-date for cloud.gov
 diagram: https://docs.google.com/document/d/1X8mbuJ79A6PqZ06gB1xE-SR0MkL-QC4TRfu1gQDxGI4/edit
 network-architecture: https://docs.google.com/document/d/1X8mbuJ79A6PqZ06gB1xE-SR0MkL-QC4TRfu1gQDxGI4/edit
 environments:
@@ -54,7 +55,7 @@ environments:
 - Amazon Web Services East / West
 user-types:
     developer:
-        functions: 
+        functions:
         - deployment
         - engineering
 controls: [url to final CF controls]
